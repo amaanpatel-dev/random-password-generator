@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Generate a Random Password</title>
+  </head>
+  <body class="bg-[#002339] text-white overflow-hidden">
+    <div class="container w-11/12 max-w-[700px] m-5 sm:m-[12%] overflow-hidden">
+      <h1 class="font-medium text-5xl">
+        Generate a <br />
+        <span class="text-[#019f55] pb-2"> Random Password </span>
+      </h1>
+      <div
+        class="display w-10/12 mt-12 mb-7 bg-white text-[#333] flex justify-between items-center py-6 px-5 rounded-md"
+      >
+        <input
+          class="border-0 outline-0 text-xl lg:text-2xl"
+          type="text"
+          id="password"
+          placeholder="Password"
+        />
+        <img
+          id="copy-btn"
+          class="w-7 cursor-pointer"
+          src="../images/copy.png"
+          alt="Copy button"
+        />
+      </div>
+      <button
+      id="generate-btn"
+        class="border-none outline-none bg-[#019f55] text-white text-xl font-light flex justify-center items-center px-6 py-4 rounded cursor-pointer"
+      >
+        <img
+          class="w-7 mr-2"
+          src="../images/generate.png"
+          alt="Generate"
+        />Generate Password
+      </button>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
